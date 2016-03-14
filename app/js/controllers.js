@@ -28,7 +28,6 @@ phonecatControllers.controller('phonesHttp', function($scope, $http) {
         url : "http://www.w3schools.com/angular/customers.php"
     }).then(function mySucces(response) {
         //console.log(response.data)
-        console.log(response)
         $scope.retVal = response.data.records;
     }, function myError(response) {
         $scope.retStatusCode = response.statusText;
